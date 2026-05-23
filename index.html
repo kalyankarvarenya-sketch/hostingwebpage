@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolhapur Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            background-color: #b30000;
+            color: white;
+            padding: 15px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 220px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to Kolhapur Tourism</h1>
     <p>Explore the beauty of Kolhapur!</p>
 
-    <img src="./ambabai.jpg" alt="Kolhapur Image" width="400" height="300">
-    <img src="./jotiba.jpg" alt="Temple Image" width="400" height="300">
-    <img src="./rankala.jpg" alt="Lake Image" width="400" height="300">
-
+    <div class="gallery">
+        <img src="./ambabai.jpg" alt="Kolhapur Image">
+        <img src="./jotiba.jpg" alt="Temple Image">
+        <img src="./rankala.jpg" alt="Lake Image">
+    </div>
 </body>
 </html>
